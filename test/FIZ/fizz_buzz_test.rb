@@ -16,12 +16,20 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(30), 'Num divisible by 15 should output fizz buzz'
   end
 
+  def test_fizz_buzz_3
+    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(153), 'Num including 3 & 5 should output buzz'
+  end
+
   def test_fizz
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(3), 'Num divisible by 3 should output fizz'
   end
 
   def test_fizz_2
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(6), 'Num divisible by 3 should output fizz'
+  end
+
+  def test_fizz_3
+    assert_equal 'fizz', FizzBuzz.new.fizz_buzz(32), 'Num including 3 should output fizz'
   end
 
   def test_buzz
@@ -32,24 +40,12 @@ class ClientTest < Minitest::Test
     assert_equal '4', FizzBuzz.new.fizz_buzz(4), 'Num not divisible by 3 or 5 should output num'
   end
 
-
-
-
-
   def test_buzz
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(10), 'Num divisible by 5 should output buzz'
   end
 
-  def test_fizz
-    assert_equal 'fizz', FizzBuzz.new.fizz_buzz(32), 'Num including 3 should output fizz'
-  end
-
-  def test_buzz
+  def test_buzz_2
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(52), 'Num including 5 should output buzz'
-  end
-
-  def test_fizz_buzz
-    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(153), 'Num including 3 & 5 should output buzz'
   end
 
   def test_delux
@@ -65,4 +61,5 @@ class ClientTest < Minitest::Test
   end
 
 end
+
 
