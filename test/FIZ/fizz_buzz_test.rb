@@ -40,10 +40,8 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(32), 'Num including 3 should output fizz'
   end
 
-  # def test_fizz_if_num_includes_3
-  #   assert_equal 'fizz', FizzBuzz.new.fizz_buzz(32), 'Num has a 3 in it, should output fizz'
-  # end
 
 end
+
 
 

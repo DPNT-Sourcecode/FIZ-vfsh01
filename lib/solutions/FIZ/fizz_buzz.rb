@@ -11,8 +11,10 @@ class FizzBuzz
 
   def output_fizz?
     true if @number.to_s.include? '3'
+p 'num include 3...'
 p @number.to_s.include? '3'
     true if @number % 3 == 0
+p 'num divisible by 3...'
 p @number % 3 == 0
   end
 
@@ -22,6 +24,7 @@ p @number % 3 == 0
   end
 
 end
+
 
 
 
