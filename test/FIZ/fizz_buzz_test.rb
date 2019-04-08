@@ -44,7 +44,9 @@ class ClientTest < Minitest::Test
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(52), 'Num including 5 should output buzz'
   end
 
-
-
+  def test_fizz_buzz
+    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(153), 'Num including 3 & 5 should output buzz'
+  end
 
 end
+

@@ -3,7 +3,7 @@ class FizzBuzz
 
   def fizz_buzz(number)
     @number = number
-    return @return = 'fizz buzz' if @number % 15 == 0
+    return @return = 'fizz buzz' if output_fizz? && output_buzz?
     return @return = 'fizz'if output_fizz?
     return @return = 'buzz' if output_buzz?
     return @return = @number.to_s
@@ -22,3 +22,4 @@ private
   end
 
 end
+
