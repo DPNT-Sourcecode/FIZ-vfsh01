@@ -48,5 +48,10 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(153), 'Num including 3 & 5 should output buzz'
   end
 
+  def test_delux
+    assert equal 'delux', FizzBuzz.new.fizz_buzz(111), 'Num is delux if all digits are equal'
+  end
+
 end
+
 
