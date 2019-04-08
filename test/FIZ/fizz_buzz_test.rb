@@ -72,10 +72,3 @@ class ClientTest < Minitest::Test
     assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(55), 'Num is buzz deluxe if buzz and deluxe'
   end
 end
-
-
-
-
-
-
-
