@@ -68,7 +68,9 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(33), 'Num is fizz deluxe if buzz and deluxe'
   end
 
-  def test_buzz_deluxe
+  def test_fake_deluxe
     assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(55), 'Num is buzz deluxe if buzz and deluxe'
   end
+
 end
+
