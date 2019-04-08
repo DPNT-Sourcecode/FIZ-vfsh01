@@ -7,6 +7,7 @@ class FizzBuzz
     return @return = 'fizz deluxe' if output_fizz? && output_deluxe?
     return @return = 'buzz deluxe' if output_buzz? && output_deluxe?
     return @return = 'fizz buzz' if output_fizz? && output_buzz?
+    return @return = 'fake deluxe' if output_fake_deluxe?
     return @return = 'deluxe' if output_deluxe?
     return @return = 'fizz'if output_fizz?
     return @return = 'buzz' if output_buzz?
@@ -25,6 +26,10 @@ private
     return true if @number % 5 == 0
   end
 
+  def output_fake_deluxe?
+    @number % 2 == 1 && output_deluxe?
+  end
+
   def output_deluxe?
     return false if @number <= 10
     first_num = @number.to_s.chars.first
@@ -34,3 +39,4 @@ private
   end
 
 end
+
