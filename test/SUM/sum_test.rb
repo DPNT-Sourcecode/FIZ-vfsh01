@@ -17,8 +17,9 @@ class ClientTest < Minitest::Test
   end
 
   def test_sum
-    assert_raise { 'must be 0-100' }, Sum.new.sum(1, 3), 'App should add two numbers'
+    assert_raise { 'must be 0-100' }, Sum.new.sum(-1, 3), 'Raise an error if int <0'
   end
 
 end
+
 
