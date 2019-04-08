@@ -36,9 +36,18 @@ class ClientTest < Minitest::Test
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(10), 'Num divisible by 5 should output buzz'
   end
 
+  def test_fizz_method
+    assert_equal true, FizzBuzz.new.output_fizz(32), 'Output true if num includes a 3'
+  end
+
+  def test_fizz_method
+    assert_equal false, FizzBuzz.new.output_fizz(22), 'Output true if num includes a 3'
+  end
+
   # def test_fizz_if_num_includes_3
   #   assert_equal 'fizz', FizzBuzz.new.fizz_buzz(32), 'Num has a 3 in it, should output fizz'
   # end
 
 end
+
 
