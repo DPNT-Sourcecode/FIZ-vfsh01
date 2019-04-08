@@ -49,15 +49,15 @@ class ClientTest < Minitest::Test
   end
 
   def test_delux
-    assert_equal 'delux', FizzBuzz.new.fizz_buzz(111), 'Num is delux if all digits are equal'
+    assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(111), 'Num is delux if all digits are equal'
   end
 
   def test_delux_1
-    assert_equal 'delux', FizzBuzz.new.fizz_buzz(222), 'Num is delux if all digits are equal'
+    assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(222), 'Num is delux if all digits are equal'
   end
 
   def test_delux_2
-    assert_equal 'delux', FizzBuzz.new.fizz_buzz(444), 'Num is delux if all digits are equal'
+    assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(444), 'Num is delux if all digits are equal'
   end
 
   def test_delux_2
@@ -65,9 +65,10 @@ class ClientTest < Minitest::Test
   end
 
   def test_fizz_buzz_delux
-    assert_equal 'fizz buzz delux', FizzBuzz.new.fizz_buzz(555), 'Num is fizz buzz delux if divisible by 555'
+    assert_equal 'fizz buzz deluxe', FizzBuzz.new.fizz_buzz(555), 'Num is fizz buzz delux if divisible by 555'
   end
 end
+
 
 
 
