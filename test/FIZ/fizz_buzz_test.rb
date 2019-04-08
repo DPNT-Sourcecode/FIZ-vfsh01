@@ -41,7 +41,7 @@ class ClientTest < Minitest::Test
   end
 
   def test_fizz_method
-    assert_equal false, FizzBuzz.new.output_fizz(22), 'Output true if num includes a 3'
+    assert_equal false, FizzBuzz.new.output_fizz(22), 'Output false if num does not include a 3'
   end
 
   # def test_fizz_if_num_includes_3
@@ -49,5 +49,6 @@ class ClientTest < Minitest::Test
   # end
 
 end
+
 
 

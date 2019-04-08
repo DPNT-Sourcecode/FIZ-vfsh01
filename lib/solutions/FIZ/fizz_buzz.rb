@@ -15,12 +15,13 @@ class FizzBuzz
   end
 
   def output_fizz(number)
-    true
+    
   end
 
 
 
 end
+
 
 
 
