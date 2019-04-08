@@ -64,9 +64,9 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz fake deluxe', FizzBuzz.new.fizz_buzz(33), 'Num is fake deluxe if odd and deluxe'
   end
 
-
-    def test_fizz_buzz_fake_deluxe
-      assert_equal 'fizz buzz fake deluxe', FizzBuzz.new.fizz_buzz(555), 'Num is fake deluxe if odd and deluxe'
-    end
+  def test_fizz_buzz_fake_deluxe
+    assert_equal 'fizz buzz fake deluxe', FizzBuzz.new.fizz_buzz(555), 'Num is fake deluxe if odd and deluxe'
+  end
 
 end
+
