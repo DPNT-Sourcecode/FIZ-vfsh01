@@ -37,13 +37,10 @@ class ClientTest < Minitest::Test
   end
 
   def test_deluxe
-    assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(36), 'Num is delux if divisible by 3 and contains a 3'
+    assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(36), 'Num is delux if divisible by 3 and contains a 3'
   end
 
   def test_deluxe_2
-    assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(50), 'Num is delux if divisible by 5 and contains a 5'
+    assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(50), 'Num is delux if divisible by 5 and contains a 5'
   end
 end
-
-
-
