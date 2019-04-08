@@ -13,7 +13,7 @@ class ClientTest < Minitest::Test
   end
 
   def test_fizz_buzz_3
-    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(170), 'Num including 3 & 5 should output buzz'
+    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(180), 'Num including 3 & 5 should output buzz'
   end
 
   def test_fizz
@@ -36,30 +36,14 @@ class ClientTest < Minitest::Test
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(10), 'Num divisible by 5 should output buzz'
   end
 
-  def test_buzz_2
-    assert_equal 'buzz', FizzBuzz.new.fizz_buzz(52), 'Num including 5 should output buzz'
-  end
-
   def test_deluxe
     assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(36), 'Num is delux if divisible by 3 and contains a 3'
   end
 
-  # def test_deluxe_3
-  #   assert_equal '8', FizzBuzz.new.fizz_buzz(8), 'Num is not delux if <= 10'
-  # end
-  #
-  # def test_fizz_deluxe
-  #   assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(66), 'Num is fizz deluxe if buzz and deluxe'
-  # end
-  #
-  # def test_fizz_fake_deluxe
-  #   assert_equal 'fizz fake deluxe', FizzBuzz.new.fizz_buzz(33), 'Num is fake deluxe if odd and deluxe'
-  # end
-  #
-  # def test_fizz_buzz_fake_deluxe
-  #   assert_equal 'fizz buzz fake deluxe', FizzBuzz.new.fizz_buzz(555), 'Num is fake deluxe if odd and deluxe'
-  # end
-
+  def test_deluxe_2
+    assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(50), 'Num is delux if divisible by 5 and contains a 5'
+  end
 end
+
 
 

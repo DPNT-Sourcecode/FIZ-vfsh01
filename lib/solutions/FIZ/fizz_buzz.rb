@@ -6,7 +6,6 @@ class FizzBuzz
     return @return = 'fizz buzz fake deluxe' if output_fizz? && output_buzz? && output_fake_deluxe?
     return @return = 'fizz fake deluxe' if output_fizz? && output_fake_deluxe?
     return @return = 'buzz fake deluxe' if output_buzz? && output_fake_deluxe?
-    return @return = 'fizz deluxe' if output_fizz? && output_deluxe?
     return @return = 'fizz buzz' if output_fizz? && output_buzz?
     return @return = 'fake deluxe' if output_fake_deluxe?
     return @return = 'deluxe' if output_deluxe?
@@ -23,6 +22,7 @@ private
 
   def output_deluxe?
     return true if contains?(3) && output_fizz?
+    return true if contains?(5) && output_buzz?
   end
 
   def output_fizz?
@@ -30,13 +30,13 @@ private
   end
 
   def output_buzz?
-    return true if @number.to_s.include? '5'
-    return true if @number % 5 == 0
+    @number % 5 == 0
   end
 
   def contains?(num)
-    return true if @number.to_s.include? num.to_s
+    @number.to_s.include? num.to_s
   end
 
 end
+
 
