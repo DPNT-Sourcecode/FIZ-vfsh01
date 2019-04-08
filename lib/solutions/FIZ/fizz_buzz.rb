@@ -19,9 +19,12 @@ private
     @number % 2 == 1 && output_deluxe?
   end
 
-  def output_deluxe?
+  def output_fizz_deluxe?
     return true if contains?(3) && @number % 3 == 0
-    return true if contains?(5) && @number % 5 == 0
+  end
+
+  def output_buzz_deluxe?
+      return true if contains?(5) && @number % 5 == 0
   end
 
   def output_fizz?
@@ -39,6 +42,7 @@ private
   end
 
 end
+
 
 
 
