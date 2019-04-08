@@ -17,9 +17,16 @@ class FizzBuzz
 
 private
 
+  def output_fake_deluxe?
+    @number % 2 == 1 && output_deluxe?
+  end
+
+  def output_deluxe?
+    return true if output_fizz? == true && @number.to_s.include? '3' == true
+  end
+
   def output_fizz?
-    return true if @number.to_s.include? '3'
-    return true if @number % 3 == 0
+    @number % 3 == 0
   end
 
   def output_buzz?
@@ -27,16 +34,5 @@ private
     return true if @number % 5 == 0
   end
 
-  def output_fake_deluxe?
-    @number % 2 == 1 && output_deluxe?
-  end
-
-  def output_deluxe?
-    return false if @number <= 10
-    first_num = @number.to_s.chars.first
-    @number.to_s.each_char do |num|
-      return false if num != first_num
-    end
-  end
-
 end
+
