@@ -9,20 +9,16 @@ class FizzBuzz
     return @return = @number.to_s
   end
 
+private
+
   def output_fizz?
     return true if @number.to_s.include? '3'
     return true if @number % 3 == 0
   end
 
   def output_buzz?
-    # return true if @number.to_s.include? '5'
+    return true if @number.to_s.include? '5'
     return true if @number % 5 == 0
   end
 
 end
-
-
-
-
-
-
