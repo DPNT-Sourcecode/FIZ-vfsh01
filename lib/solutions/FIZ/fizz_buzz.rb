@@ -23,10 +23,14 @@ private
   end
 
   def output_delux?
-    true if @number == 111
+    new_num = @number.to_s
+    new_num.to_s.each_char do |char|
+      new_num.delete(char) if !include?(char)
+    end
   end
 
 end
+
 
 
 
