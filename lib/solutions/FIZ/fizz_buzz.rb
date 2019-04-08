@@ -6,7 +6,6 @@ class FizzBuzz
     return @return = 'fizz buzz fake deluxe' if output_fizz? && output_buzz? && output_fake_deluxe?
     return @return = 'fizz fake deluxe' if output_fizz? && output_fake_deluxe?
     return @return = 'buzz fake deluxe' if output_buzz? && output_fake_deluxe?
-    return @return = 'fizz buzz deluxe' if output_fizz? && output_buzz? && output_deluxe?
     return @return = 'fizz deluxe' if output_fizz? && output_deluxe?
     return @return = 'fizz buzz' if output_fizz? && output_buzz?
     return @return = 'fake deluxe' if output_fake_deluxe?
@@ -41,6 +40,3 @@ private
   end
 
 end
-
-
-
