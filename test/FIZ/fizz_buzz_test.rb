@@ -64,10 +64,11 @@ class ClientTest < Minitest::Test
     assert_equal '8', FizzBuzz.new.fizz_buzz(8), 'Num is not delux if <= 10'
   end
 
-  def fizz_buzz_delux
-    assert_equal 'fizz buzz delux', FizzBuzz.new.fizz_buzz(555),
+  def test_fizz_buzz_delux
+    assert_equal 'fizz buzz delux', FizzBuzz.new.fizz_buzz(555), 'Num is fizz buzz delux if divisible by 555'
   end
 end
+
 
 
 

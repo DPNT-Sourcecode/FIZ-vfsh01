@@ -3,6 +3,7 @@ class FizzBuzz
 
   def fizz_buzz(number)
     @number = number
+    return @return = 'fizz buzz delux' if output_fizz? && output_buzz? && output_delux?
     return @return = 'fizz buzz' if output_fizz? && output_buzz?
     return @return = 'delux' if output_delux?
     return @return = 'fizz'if output_fizz?
@@ -31,6 +32,7 @@ private
   end
 
 end
+
 
 
 
