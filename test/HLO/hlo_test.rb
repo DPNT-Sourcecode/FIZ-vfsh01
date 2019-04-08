@@ -11,6 +11,10 @@ class ClientTest < Minitest::Test
   def test_hlo
     assert_equal "Hello, world!", Hello.new.hello("world"), 'App should return sentence'
   end
+
+  def test_hlo
+    assert_equal "Hello, Clare!", Hello.new.hello("Clare"), 'App should return sentence'
+  end
   #
   # def test_sum_2
   #   assert_equal 4, Sum.new.sum(1, 3), 'App should add two numbers'
