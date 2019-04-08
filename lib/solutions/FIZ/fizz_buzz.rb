@@ -23,6 +23,7 @@ private
   end
 
   def output_delux?
+    return false if @number <= 10
     first_num = @number.to_s.chars.first
     @number.to_s.each_char do |num|
       return false if num != first_num
@@ -30,6 +31,7 @@ private
   end
 
 end
+
 
 
 

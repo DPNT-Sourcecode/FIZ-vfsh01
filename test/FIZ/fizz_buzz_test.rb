@@ -60,6 +60,14 @@ class ClientTest < Minitest::Test
     assert_equal 'delux', FizzBuzz.new.fizz_buzz(444), 'Num is delux if all digits are equal'
   end
 
+  def test_delux_2
+    assert_equal '8', FizzBuzz.new.fizz_buzz(8), 'Num is not delux if <= 10'
+  end
+
+  def fizz_buzz_delux
+    assert_equal 'fizz buzz delux', FizzBuzz.new.fizz_buzz(555),
+  end
 end
+
 
 
