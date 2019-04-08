@@ -16,11 +16,14 @@ class ClientTest < Minitest::Test
     assert_equal 4, Sum.new.sum(1, 3), 'App should add two numbers'
   end
 
-  it 'Raises an error if int <0' do
-    expect { Sum.new.sum(-1, 3) }.to raise_error('Param must be 0-100 integer')
+  def test_positive_integer
+    assert_raises 'Need 0-100 integer' do
+      Sum.new.sum(-1, 3)
+    end
   end
 
 end
+
 
 
 
