@@ -23,11 +23,13 @@ private
   end
 
   def output_delux?
-    string_num = @number.to_s
-    s = string_num.chars.uniq.count { |char| string_num.count(char) > 1 }
-    return true if s == string_num.length
+    first_num = @number.to_s.chars.first
+    @number.to_s.each_char do |num|
+      return false if num != first_num
+    end
   end
 
 end
+
 
 
