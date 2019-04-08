@@ -24,10 +24,12 @@ private
 
   def output_delux?
     string_num = @number.to_s
-p   string_num.chars.count { |char| string_num.count(char) > 1 }
+    s = string_num.chars.uniq.count { |char| string_num.count(char) > 1 }
+    return true if s == string_num.length
   end
 
 end
+
 
 
 
