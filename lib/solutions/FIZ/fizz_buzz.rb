@@ -23,13 +23,12 @@ private
   end
 
   def output_delux?
-    new_num = @number.to_s
-    new_num.to_s.each_char do |char|
-      new_num.delete(char) if !include?(char)
-    end
+    string_num = @number.to_s
+p   string_num.chars.count { |char| string_num.count(char) > 1 }
   end
 
 end
+
 
 
 
