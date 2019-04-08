@@ -15,12 +15,13 @@ class FizzBuzz
   end
 
   def output_fizz(number)
-    
+    number.to_i.to_s.include? 3
   end
 
 
 
 end
+
 
 
 
