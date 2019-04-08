@@ -23,9 +23,10 @@ private
   end
 
   def output_delux?
-
+    true if @number == 111
   end
 
 end
+
 
 
