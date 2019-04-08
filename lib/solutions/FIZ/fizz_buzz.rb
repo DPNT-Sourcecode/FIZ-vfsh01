@@ -10,20 +10,17 @@ class FizzBuzz
   end
 
   def output_fizz?
-    true if @number.to_s.include? '3'
-p 'num include 3...'
-p @number.to_s.include? '3'
-    true if @number % 3 == 0
-p 'num divisible by 3...'
-p @number % 3 == 0
+    return true if @number.to_s.include? '3'
+    return true if @number % 3 == 0
   end
 
   def output_buzz?
-    # true if @number.to_s.include? '5'
-    true if @number % 5 == 0
+    # return true if @number.to_s.include? '5'
+    return true if @number % 5 == 0
   end
 
 end
+
 
 
 
