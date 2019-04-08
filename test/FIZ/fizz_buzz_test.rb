@@ -12,8 +12,16 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(15), 'Num divisible by 15 should output fizz buzz'
   end
 
-  def test_fizz_buzz
+  def test_fizz
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(3), 'Num divisible by 3 should output fizz'
+  end
+
+  def test_buzz
+    assert_equal 'buzz', FizzBuzz.new.fizz_buzz(5), 'Num divisible by 3 should output fizz'
+  end
+
+  def test_other_integer
+    assert_equal 'buzz', FizzBuzz.new.fizz_buzz(5), 'Num divisible by 3 should output fizz'
   end
   #
   # def test_sum_2
@@ -27,4 +35,5 @@ class ClientTest < Minitest::Test
   # end
 
 end
+
 
