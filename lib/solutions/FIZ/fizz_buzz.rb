@@ -20,16 +20,18 @@ private
   end
 
   def output_deluxe?
-    return true if contains?(3) && output_fizz?
-    return true if contains?(5) && output_buzz?
+    return true if contains?(3) && @number % 3 == 0
+    return true if contains?(5) && @number % 5 == 0
   end
 
   def output_fizz?
-    @number % 3 == 0
+    return true if @number % 3 == 0
+    return true if contains?(3)
   end
 
   def output_buzz?
-    @number % 5 == 0
+    return true if @number % 5 == 0
+    return true if contains?(5)
   end
 
   def contains?(num)
@@ -37,6 +39,7 @@ private
   end
 
 end
+
 
 
 
