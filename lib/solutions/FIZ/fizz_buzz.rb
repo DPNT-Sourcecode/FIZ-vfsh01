@@ -3,6 +3,9 @@ class FizzBuzz
 
   def fizz_buzz(number)
     @number = number
+    return @return = 'fizz buzz fake deluxe' if output_fizz? && output_buzz? && output_fake_deluxe?
+    return @return = 'fizz fake deluxe' if output_fizz? && output_fake_deluxe?
+    return @return = 'buzz fake deluxe' if output_buzz? && output_fake_deluxe?
     return @return = 'fizz buzz deluxe' if output_fizz? && output_buzz? && output_deluxe?
     return @return = 'fizz deluxe' if output_fizz? && output_deluxe?
     return @return = 'buzz deluxe' if output_buzz? && output_deluxe?
@@ -39,4 +42,5 @@ private
   end
 
 end
+
 
