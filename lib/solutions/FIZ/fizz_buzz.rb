@@ -22,11 +22,7 @@ private
   end
 
   def output_deluxe?
-    if @number.to_s.include? '3' == true && output_fizz? == true
-      return true
-    else
-      return nil
-    end
+    return true if contains?(3) && output_fizz?
   end
 
   def output_fizz?
@@ -38,4 +34,9 @@ private
     return true if @number % 5 == 0
   end
 
+  def contains?(num)
+    return true if @number.to_s.include? num.to_s
+  end
+
 end
+
