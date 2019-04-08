@@ -49,11 +49,7 @@ class ClientTest < Minitest::Test
   end
 
   def test_deluxe
-    assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(111), 'Num is delux if all digits are equal'
-  end
-
-  def test_deluxe_1
-    assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(222), 'Num is delux if all digits are equal'
+    assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(11), 'Num is delux if all digits are equal'
   end
 
   def test_deluxe_2
@@ -69,13 +65,14 @@ class ClientTest < Minitest::Test
   end
 
   def test_fizz_deluxe
-    assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(555), 'Num is fizz deluxe if buzz and deluxe'
+    assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(33), 'Num is fizz deluxe if buzz and deluxe'
   end
 
   def test_buzz_deluxe
-    assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(555), 'Num is buzz deluxe if buzz and deluxe'
+    assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(55), 'Num is buzz deluxe if buzz and deluxe'
   end
 end
+
 
 
 
