@@ -6,6 +6,3 @@ class Sum
   end
 
 end
-
-
-
