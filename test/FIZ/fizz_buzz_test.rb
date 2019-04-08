@@ -9,15 +9,11 @@ require_solution 'FIZ'
 class ClientTest < Minitest::Test
 
   def test_fizz_buzz
-    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(15), 'Num divisible by 15 should output fizz buzz'
-  end
-
-  def test_fizz_buzz_2
-    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(30), 'Num divisible by 15 should output fizz buzz'
+    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(60), 'Num divisible by 15 should output fizz buzz'
   end
 
   def test_fizz_buzz_3
-    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(153), 'Num including 3 & 5 should output buzz'
+    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(170), 'Num including 3 & 5 should output buzz'
   end
 
   def test_fizz
@@ -26,10 +22,6 @@ class ClientTest < Minitest::Test
 
   def test_fizz_2
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(6), 'Num divisible by 3 should output fizz'
-  end
-
-  def test_fizz_3
-    assert_equal 'fizz', FizzBuzz.new.fizz_buzz(32), 'Num including 3 should output fizz'
   end
 
   def test_buzz
@@ -69,3 +61,4 @@ class ClientTest < Minitest::Test
   # end
 
 end
+
