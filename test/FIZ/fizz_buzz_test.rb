@@ -48,10 +48,6 @@ class ClientTest < Minitest::Test
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(52), 'Num including 5 should output buzz'
   end
 
-  def test_deluxe
-    assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(11), 'Num is delux if all digits are equal'
-  end
-
   def test_deluxe_2
     assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(444), 'Num is delux if all digits are equal'
   end
@@ -68,9 +64,14 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(33), 'Num is fizz deluxe if buzz and deluxe'
   end
 
-  def test_fake_deluxe
+  def test_buzz_deluxe
     assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(55), 'Num is buzz deluxe if buzz and deluxe'
   end
 
+  def test_fake_deluxe
+    assert_equal 'fake deluxe', FizzBuzz.new.fizz_buzz(11), 'Num is fake deluxe if odd and deluxe'
+  end
+
 end
+
 
