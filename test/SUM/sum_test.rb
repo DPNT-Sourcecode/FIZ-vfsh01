@@ -12,4 +12,13 @@ class ClientTest < Minitest::Test
     assert_equal 3, Sum.new.sum(1, 2), 'App should add two numbers'
   end
 
+  def test_sum
+    assert_equal 4, Sum.new.sum(1, 3), 'App should add two numbers'
+  end
+
+  def test_sum
+    assert_raise { 'must be 0-100' }, Sum.new.sum(1, 3), 'App should add two numbers'
+  end
+
 end
+

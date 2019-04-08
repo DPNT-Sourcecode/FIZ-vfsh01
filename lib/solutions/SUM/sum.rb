@@ -2,9 +2,10 @@
 class Sum
 
   def sum(x, y)
-    3
+    x + y
   end
 
 end
+
 
 
